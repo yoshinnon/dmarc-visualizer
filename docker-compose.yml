@@ -21,7 +21,7 @@ services:
     build: ./grafana/
     ports:
       - 80:3000
-    user: ubuntu
+    user: root
     environment:
       GF_INSTALL_PLUGINS: grafana-piechart-panel,grafana-worldmap-panel
       GF_AUTH_ANONYMOUS_ENABLED: 'true'
